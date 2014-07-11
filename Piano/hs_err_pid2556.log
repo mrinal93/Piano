@@ -1,0 +1,130 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=2556, tid=4280
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_45-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.45-b08 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0090c400):  JavaThread "Unknown thread" [_thread_in_vm, id=4280, stack(0x00b50000,0x00ba0000)]
+
+Stack: [0x00b50000,0x00ba0000],  sp=0x00b9f750,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x18df51]
+V  [jvm.dll+0x187cc6]
+V  [jvm.dll+0x3586a]
+V  [jvm.dll+0x358f6]
+V  [jvm.dll+0x4400d]
+V  [jvm.dll+0x442be]
+V  [jvm.dll+0x9263a]
+V  [jvm.dll+0x929eb]
+V  [jvm.dll+0x13daf1]
+V  [jvm.dll+0x1605fc]
+V  [jvm.dll+0xc8ebf]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa5b1]
+C  [javaw.exe+0xa63b]
+C  [kernel32.dll+0x4ee1c]
+C  [ntdll.dll+0x637eb]
+C  [ntdll.dll+0x637be]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0090c400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4280, stack(0x00b50000,0x00ba0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.023 loading class 0x00a4c8a0 done
+Event: 0.023 loading class 0x00a4c330 done
+Event: 0.023 loading class 0x00a4c310
+Event: 0.023 loading class 0x00a53638
+Event: 0.023 loading class 0x00a53638 done
+Event: 0.023 loading class 0x00a53668
+Event: 0.046 loading class 0x00a53668 done
+Event: 0.046 loading class 0x00a53698
+Event: 0.046 loading class 0x00a53698 done
+Event: 0.047 loading class 0x00a4c310 done
+
+
+Dynamic libraries:
+0x00c30000 - 0x00c5f000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x777b0000 - 0x778ec000 	C:\Windows\SYSTEM32\ntdll.dll
+0x77210000 - 0x772e4000 	C:\Windows\system32\kernel32.dll
+0x75a00000 - 0x75a4b000 	C:\Windows\system32\KERNELBASE.dll
+0x77020000 - 0x770c0000 	C:\Windows\system32\ADVAPI32.dll
+0x76a70000 - 0x76b1c000 	C:\Windows\system32\msvcrt.dll
+0x77920000 - 0x77939000 	C:\Windows\SYSTEM32\sechost.dll
+0x772f0000 - 0x77392000 	C:\Windows\system32\RPCRT4.dll
+0x76ca0000 - 0x76d69000 	C:\Windows\system32\USER32.dll
+0x771c0000 - 0x7720e000 	C:\Windows\system32\GDI32.dll
+0x778f0000 - 0x778fa000 	C:\Windows\system32\LPK.dll
+0x77940000 - 0x779dd000 	C:\Windows\system32\USP10.dll
+0x74630000 - 0x747ce000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x77620000 - 0x77677000 	C:\Windows\system32\SHLWAPI.dll
+0x76c80000 - 0x76c9f000 	C:\Windows\system32\IMM32.DLL
+0x770c0000 - 0x7718c000 	C:\Windows\system32\MSCTF.dll
+0x5cbf0000 - 0x5ccaf000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x58060000 - 0x583e0000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x6f4b0000 - 0x6f4b7000 	C:\Windows\system32\WSOCK32.dll
+0x76a30000 - 0x76a65000 	C:\Windows\system32\WS2_32.dll
+0x77010000 - 0x77016000 	C:\Windows\system32\NSI.dll
+0x73080000 - 0x730b2000 	C:\Windows\system32\WINMM.dll
+0x77900000 - 0x77905000 	C:\Windows\system32\PSAPI.DLL
+0x6eb50000 - 0x6eb5c000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x6e410000 - 0x6e430000 	C:\Program Files\Java\jre7\bin\java.dll
+0x6e430000 - 0x6e443000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x61090000 - 0x6117b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath/p:D:\Android\Software\adt-bundle-windows-x86-20130729\adt-bundle-windows-x86-20130729\sdk\platforms\android-18\android.jar 
+java_command: com.example.piano.MidiMaker
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\QuickTime\QTSystem\QTJava.zip
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\Program Files\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\QuickTime\QTSystem\;E:\Ruby200\bin;E:\GAE\;D:\Android\Software\adt-bundle-windows-x86-20130729\adt-bundle-windows-x86-20130729\eclipse;
+USERNAME=Mrinal
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, popcnt, tsc, tscinvbit
+
+Memory: 4k page, physical 1825652k(233780k free), swap 3758296k(800128k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.45-b08) for windows-x86 JRE (1.7.0_45-b18), built on Oct  8 2013 06:02:43 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jun 11 17:10:17 2014
+elapsed time: 0 seconds
+
